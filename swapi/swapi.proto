@@ -1,0 +1,135 @@
+syntax = "proto3";
+
+package swapi;
+
+service swapi{
+    rpc Films(FilmsRequest) returns(FilmsReply){}
+    rpc People(PeopleRequest) returns(PeopleReply){}
+    rpc Planets(PlanetsRequest) returns(PlanetsReply){}
+    rpc Species(SpeciesRequest) returns(SpeciesReply){}
+    // rpc Starships(StarshipsRequest) returns(StarshipsReply){}
+    // rpc Transport(TransportRequest) returns(TransportReply){}
+    // rpc Vehicles(VehiclesRequest) returns(VehiclesReply){}
+}
+
+message FilmsRequest{
+    int32 id = 1;
+    string title = 2;
+}
+
+message Film {
+  int32 id = 1;
+  string title = 2;
+  string episodeId = 3;
+  string director = 4;
+  string producer = 5;
+  string edited = 6;
+  string releaseDate = 7;
+  string url = 8;
+  string openingCrawl = 9;
+  repeated int32 characters = 10;
+  repeated int32 planets = 11;
+  repeated int32 species = 12;
+  repeated int32 starships = 13;
+  repeated int32 vehicles = 14;
+}
+
+message FilmsReply{
+  repeated Film films = 1;
+}
+
+message PeopleRequest{
+  int32 id = 1;
+  string name = 2;
+}
+
+message Person{
+  int32 id = 1;
+  string name = 2;
+  string birth_year = 3;
+  string gender = 4;
+  string eye_color = 5;
+  string hair_color = 6;
+  string skin_color = 7;
+  string height = 8;
+  string mass = 9;
+  int32 homeworld = 10;
+  string url = 11;
+  string created = 12;
+  string edited = 13;
+  repeated int32 films = 14;
+  repeated int32 starships = 15;
+  repeated int32 species = 16;
+  repeated int32 vehicles = 17;
+}
+
+message PeopleReply{
+  repeated Person people = 1;
+}
+
+message PlanetsRequest{
+  int32 id = 1;
+  string name = 2;
+}
+
+message Planet{
+  int32 id = 1;
+  string name = 2;
+  string population = 3;
+  string diameter = 4;
+  string gravity = 5;
+  string climate = 6;
+  string terrain = 7;
+  string rotation_period = 8;
+  string orbital_period = 9;
+  string surface_water = 10;
+  string url = 11;
+  string created = 12;
+  string edited = 13;
+  repeated int32 residents = 14;
+  repeated int32 films = 15;
+}
+
+message PlanetsReply{
+  repeated Planet planets = 1;
+}
+
+message SpeciesRequest{
+  int32 id = 1;
+  string name = 2;
+}
+
+message Species{
+  int32 id = 1;
+  string name = 2;
+  string classification = 3;
+  string designation = 4;
+  string average_height = 5;
+  string average_lifespan = 6;
+  string eye_colors = 7;
+  string hair_colors = 8;
+  string skin_colors = 9;
+  string language = 10;
+  int32 homeworld = 11;
+  string url = 12;
+  string created = 13;
+  string edited = 14;
+  repeated int32 people = 15;
+  repeated int32 films = 16;
+}
+
+message SpeciesReply{
+  repeated Species species = 1;
+}
+
+// message StarshipsRequest{}
+
+// message StarshipsReply{}
+
+// message TransportRequest{}
+
+// message TransportReply{}
+
+// message VehiclesRequest{}
+
+// message VehiclesReply{}
