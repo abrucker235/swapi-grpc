@@ -7,6 +7,7 @@ import (
 	"log"
 	"net"
 	"os"
+	"swapi-grpc/model"
 	pb "swapi-grpc/swapi"
 
 	"google.golang.org/grpc"
@@ -23,11 +24,21 @@ var Planets []*pb.Planet
 
 var Species []*pb.Species
 
+var Starships []*pb.Starship
+
+var Transports []*model.Transport
+
+var Vehicles []*pb.Vehicle
+
 func init() {
 	readJSONFile("data/films.json", &Films)
 	readJSONFile("data/people.json", &People)
 	readJSONFile("data/planets.json", &Planets)
 	readJSONFile("data/species.json", &Species)
+	readJSONFile("data/starships.json", &Starships)
+	readJSONFile("data/transports.json", &Transports)
+	readJSONFile("data/vehicles.json", &Vehicles)
+	log.Println("All Data Loaded!")
 }
 
 func main() {

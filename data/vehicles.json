@@ -1,0 +1,220 @@
+[
+  {
+    "id": 4,
+    "vehicle_class": "wheeled",
+    "pilots": []
+  },
+  {
+    "id": 6,
+    "vehicle_class": "repulsorcraft",
+    "pilots": []
+  },
+  {
+    "id": 7,
+    "vehicle_class": "repulsorcraft",
+    "pilots": []
+  },
+  {
+    "id": 8,
+    "vehicle_class": "starfighter",
+    "pilots": []
+  },
+  {
+    "id": 14,
+    "vehicle_class": "airspeeder",
+    "pilots": [
+      1,
+      18
+    ]
+  },
+  {
+    "id": 16,
+    "vehicle_class": "space/planetary bomber",
+    "pilots": []
+  },
+  {
+    "id": 18,
+    "vehicle_class": "assault walker",
+    "pilots": []
+  },
+  {
+    "id": 19,
+    "vehicle_class": "walker",
+    "pilots": [
+      13
+    ]
+  },
+  {
+    "id": 20,
+    "vehicle_class": "repulsorcraft",
+    "pilots": []
+  },
+  {
+    "id": 24,
+    "vehicle_class": "sail barge",
+    "pilots": []
+  },
+  {
+    "id": 25,
+    "vehicle_class": "repulsorcraft cargo skiff",
+    "pilots": []
+  },
+  {
+    "id": 26,
+    "vehicle_class": "starfighter",
+    "pilots": []
+  },
+  {
+    "id": 30,
+    "vehicle_class": "speeder",
+    "pilots": [
+      1,
+      5
+    ]
+  },
+  {
+    "id": 33,
+    "vehicle_class": "starfighter",
+    "pilots": []
+  },
+  {
+    "id": 34,
+    "vehicle_class": "repulsorcraft",
+    "pilots": []
+  },
+  {
+    "id": 35,
+    "vehicle_class": "repulsorcraft",
+    "pilots": []
+  },
+  {
+    "id": 36,
+    "vehicle_class": "repulsorcraft",
+    "pilots": []
+  },
+  {
+    "id": 37,
+    "vehicle_class": "landing craft",
+    "pilots": []
+  },
+  {
+    "id": 38,
+    "vehicle_class": "submarine",
+    "pilots": [
+      10,
+      32
+    ]
+  },
+  {
+    "id": 42,
+    "vehicle_class": "speeder",
+    "pilots": [
+      44
+    ]
+  },
+  {
+    "id": 44,
+    "vehicle_class": "repulsorcraft",
+    "pilots": [
+      11
+    ]
+  },
+  {
+    "id": 45,
+    "vehicle_class": "airspeeder",
+    "pilots": [
+      70
+    ]
+  },
+  {
+    "id": 46,
+    "vehicle_class": "airspeeder",
+    "pilots": [
+      11
+    ]
+  },
+  {
+    "id": 50,
+    "vehicle_class": "gunship",
+    "pilots": []
+  },
+  {
+    "id": 51,
+    "vehicle_class": "gunship",
+    "pilots": []
+  },
+  {
+    "id": 53,
+    "vehicle_class": "walker",
+    "pilots": []
+  },
+  {
+    "id": 54,
+    "vehicle_class": "walker",
+    "pilots": []
+  },
+  {
+    "id": 55,
+    "vehicle_class": "speeder",
+    "pilots": [
+      67
+    ]
+  },
+  {
+    "id": 56,
+    "vehicle_class": "transport",
+    "pilots": []
+  },
+  {
+    "id": 57,
+    "vehicle_class": "starfighter",
+    "pilots": []
+  },
+  {
+    "id": 60,
+    "vehicle_class": "wheeled walker",
+    "pilots": [
+      79
+    ]
+  },
+  {
+    "id": 62,
+    "vehicle_class": "fire suppression ship",
+    "pilots": []
+  },
+  {
+    "id": 67,
+    "vehicle_class": "droid starfighter",
+    "pilots": []
+  },
+  {
+    "id": 69,
+    "vehicle_class": "airspeeder",
+    "pilots": []
+  },
+  {
+    "id": 70,
+    "vehicle_class": "air speeder",
+    "pilots": []
+  },
+  {
+    "id": 71,
+    "vehicle_class": "wheeled walker",
+    "pilots": []
+  },
+  {
+    "id": 72,
+    "vehicle_class": "droid tank",
+    "pilots": []
+  },
+  {
+    "id": 73,
+    "vehicle_class": "airspeeder",
+    "pilots": []
+  },
+  {
+    "id": 76,
+    "vehicle_class": "walker",
+    "pilots": []
+  }
+]

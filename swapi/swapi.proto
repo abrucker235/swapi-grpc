@@ -7,9 +7,8 @@ service swapi{
     rpc People(PeopleRequest) returns(PeopleReply){}
     rpc Planets(PlanetsRequest) returns(PlanetsReply){}
     rpc Species(SpeciesRequest) returns(SpeciesReply){}
-    // rpc Starships(StarshipsRequest) returns(StarshipsReply){}
-    // rpc Transport(TransportRequest) returns(TransportReply){}
-    // rpc Vehicles(VehiclesRequest) returns(VehiclesReply){}
+    rpc Starships(StarshipsRequest) returns(StarshipsReply){}
+    rpc Vehicles(VehiclesRequest) returns(VehiclesReply){}
 }
 
 message FilmsRequest{
@@ -122,14 +121,64 @@ message SpeciesReply{
   repeated Species species = 1;
 }
 
-// message StarshipsRequest{}
+message StarshipsRequest{
+  int32 id = 1;
+  string name = 2;
+  string model = 3;
+}
 
-// message StarshipsReply{}
+message Starship{
+  int32 id = 1;
+  string name = 2;
+  string model = 3;
+  string starship_class = 4;
+  string manufacturer = 5;
+  string cost_in_credits = 6;
+  string length = 7;
+  string crew = 8;
+  string passengers = 9;
+  string max_atmosphering_speed = 10;
+  string hyperdrive_rating = 11;
+  string MGLT = 12;
+  string cargo_capacity = 13;
+  string consumables = 14;
+  string url = 15;
+  string created = 16;
+  string edited = 17;
+  repeated int32 films = 18;
+  repeated int32 pilots =19;
+}
 
-// message TransportRequest{}
+message StarshipsReply{
+  repeated Starship starships = 1;
+}
 
-// message TransportReply{}
+message VehiclesRequest{
+  int32 id = 1;
+  string name = 2;
+  string model = 3;
+}
 
-// message VehiclesRequest{}
+message Vehicle{
+  int32 id = 1;
+  string name = 2;
+  string model = 3;
+  string vehicle_class = 4;
+  string manufacturer = 5;
+  string length = 6;
+  string cost_in_credits = 7;
+  string crew = 8;
+  string passengers = 9;
+  string max_atmosphering_speed = 10;
+  string cargo_capacity = 11;
+  string consumables = 12;
+  string url = 13;
+  string created = 14;
+  string edited = 15;
+  repeated int32 films = 16;
+  repeated int32 pilots = 17;
+}
 
-// message VehiclesReply{}
+message VehiclesReply{
+  repeated Vehicle vehicles = 1;
+}
