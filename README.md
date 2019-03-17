@@ -12,6 +12,14 @@ go build -o swapi
 ```
 
 ## Run
+### Foreground
 ```
 ./swapi
 ```
+### Background
+```
+./swapi &
+```
+
+## Data
+All data is currently held in json files in data directory.
